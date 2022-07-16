@@ -1,0 +1,14 @@
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+html {
+    font-family: arial;
+}
+
+.columnSection {
+    column-count: 2;
+    padding: 2em;
+    background: lightgrey;
+}
