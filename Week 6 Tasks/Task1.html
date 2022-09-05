@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p>User name:</p>
+            <input 
+                v-model="name"
+                type="text"
+                placeholder="Please enter your user name"
+            />
+            <p>Current Name: {{ name }}</p><br>
+            <p>Password:</p>
+            <input
+                v-model="password"
+                type="password" 
+                placeholder="please enter password" 
+            />
+            <p>Current Password Stored: {{ password }}</p><br>
+            <p>Email:</p>
+            <input 
+                v-model="email"
+                type="text"
+                placeholder="Please enter your email"
+            />
+            <p>Current Email Stored: {{ email }}</p><br>
+            <p>Range:</p>
+            <input type="range" />
+            <p>Number:</p>
+            <input type="number" />
+            <p>Month:</p>
+            <input type="month" />
+        </div>
+    </body>
+</html>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            name: 'sam',
+            email: 'email@email.com',
+            password: '1234'
+        },
+    });
+</script>
